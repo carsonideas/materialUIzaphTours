@@ -25,9 +25,9 @@ const FooterSection = () => {
             <Typography variant="body2">
               📧 info@zaphtours.com
               <br />
-              📞 +254 700 123 456
+               +254 700 123 456
               <br />
-              📍 Nairobi, Kenya
+              Nairobi, Kenya
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
