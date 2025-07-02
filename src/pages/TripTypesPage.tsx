@@ -25,9 +25,11 @@ const tripTypes = [
   {
     title: "Safari Adventures",
     image:
-     "./image4.jpeg",
+    //  "./image4.jpeg",
+
       // "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    description:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOc_sbgqtP4OYOBwmf5Qht9ItLbxktPgEpw&s",
+      description:
       "Experience the Big Five and witness the Great Migration in Kenya's world-renowned national parks and reserves.",
     features: [
       "Game drives in luxury 4x4 vehicles",

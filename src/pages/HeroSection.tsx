@@ -18,7 +18,8 @@ const HeroSection = () => {
         height: "100vh",
         background:
           // 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5")',
-        'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/image2.png")',
+        'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=kkZiaB9Q-GbY5gjf6WWURzEpLzNrpjZp_tn09GB21bI=")',
+          // 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/image2.png")',
           backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",

@@ -13,7 +13,8 @@ const destinations = [
   {
     name: "Mt. Kenya",
     image:
-    "/image5.png",
+    // "/image5.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOc_sbgqtP4OYOBwmf5Qht9ItLbxktPgEpw&s",
       // "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=800&q=80",
     description: "Africa's second highest peak with alpine scenery and hiking.",
     price: "$1,200",
@@ -21,35 +22,46 @@ const destinations = [
   {
     name: "Mt. Longonot",
     image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
-    description: "The legendary Mountains of the Moon with unique flora.",
+
+      // "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
+      "https://i.cbc.ca/1.3372480.1450473649!/fileImage/httpImage/image.jpg_gen/derivatives/original_1180/comedy-wildlife-photography-awards-dancing-sifaka-dec-2015.jpg?im=Resize%3D1180",
+      description: "The legendary Mountains of the Moon with unique flora.",
     price: "$1,800",
   },
   {
     name: "Lake Nakuru",
     image:
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80",
-    description: "Famous for flamingos and bird species around the lake.",
+      // "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80",
+      "https://i.ytimg.com/vi/EXVk1IjV9GU/sddefault.jpg?v=631cdfde",
+      
+      description: "Famous for flamingos and bird species around the lake.",
     price: "$450",
   },
   {
     name: "Tsavo National Park",
     image:
-      "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80",
-    description: "Kenya's largest national park with red elephants and lions.",
+
+      // "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQW4PEwgW-2K4wtJag4z4PYlJf9fH8zm1r-PmK2jrV2XyKhKaVOrgybpZq9MSXfvLwJA&usqp=CAU",
+      
+      description: "Kenya's largest national park with red elephants and lions.",
     price: "$680",
   },
   {
     name: "Nairobi National Park",
     image:
-      "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=800&q=80",
-    description: "Urban park with wildlife and city skyline backdrop.",
+      // "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=800&q=80",
+      "https://i.pinimg.com/736x/1b/40/f0/1b40f08f6d48eeca5359fbf45da4174c.jpg",
+      // "https://i.pinimg.com/736x/ac/c2/f2/acc2f2506f2399aa46e87f97a2eb2095.jpg",
+      description: "Urban park with wildlife and city skyline backdrop.",
     price: "$280",
   },
   {
     name: "Coastal Kenya",
     image:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "https://prod.static9.net.au/fs/646e6914-cc2a-452e-82ce-b40120e6b82f",
+    // "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+    // "https://i.cbc.ca/1.3372522.1450474155!/fileImage/httpImage/image.jpg_gen/derivatives/original_1180/comedy-wildlife-photography-awards-last-tango-2015.jpg?im=Resize%3D1180",
     description: "White sand beaches, coral reefs, and rich Swahili culture.",
     price: "$850",
   },
@@ -81,6 +93,7 @@ const FeaturedDestinations = () => {
                 display: "flex",
                 justifyContent: "center",
                 width: { xs: 250, md: 350 },
+                // height: 600
               }}
             >
               <Card
@@ -102,11 +115,12 @@ const FeaturedDestinations = () => {
                 <Box
                   sx={{
                     // width: { xs: 500, md: 250 },
-                    height: { xs: 200, md: 250 },
+                    // height: { xs: 200, md: 250 },
                     backgroundImage: `url(${dest.image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     margin: 0,
+                    height: 400,
                   }}
                 />
                 <Box
