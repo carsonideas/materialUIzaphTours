@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   Box,
   Container,
@@ -99,7 +99,7 @@ const DestinationsPage = () => {
     startIndex + destinationsPerPage,
   );
 
-  const handlePageChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+  const handlePageChange = (event, value) => {
     setCurrentPage(value);
   };
 
@@ -159,13 +159,14 @@ const DestinationsPage = () => {
         {/* Destinations Grid */}
         <Grid container spacing={4}>
           {currentDestinations.map((destination, index) => (
-            <Grid size={{ xs: 12, md: 6, lg: 4 }} key={index}>
+            <Grid item xs={12} md={6} lg={4} key={index}>
               <Card
                 sx={{
-                  width: { xs: 450, sm: 330, md: 439, lg: 559 },
+                  width: { xs: 450, sm: 330, md: 439, lg: 559, xl: 560 },
+                  // width: { xs: 450, sm: 330, md: 439, lg: 559 },
                   // height: { xs: 450, sm: 330, md: 439, lg: 559 }
                   //  width:500,
-                  height: 800,
+                  height: 600,
                   display: "flex",
                   flexDirection: "column",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -375,4 +376,3 @@ const DestinationsPage = () => {
 };
 
 export default DestinationsPage;
-

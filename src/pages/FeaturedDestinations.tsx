@@ -80,8 +80,8 @@ const FeaturedDestinations = () => {
                   flexDirection: "column",
                   justifyContent: "space-between",
                   height: "100%",
-                  width: 300,
-                  maxWidth: 350,
+                  width: 350,
+                  // maxWidth: 350,
                   boxShadow: 4,
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
                   "&:hover": {

@@ -1,6 +1,5 @@
 // src/pages/TripTypesPage.tsx
-import React from "react";
-import {
+import { // Removed React import as it's not directly used in JSX transform
   Box,
   Container,
   Grid,
@@ -74,10 +73,11 @@ const tripTypes = [
     difficulty: "Easy",
     price: "From $850/person",
   },
+  
   {
     title: "Safari Adventures",
     image:
-      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     description:
       "Experience the Big Five and witness the Great Migration in Kenya's world-renowned national parks and reserves.",
     features: [
@@ -92,6 +92,7 @@ const tripTypes = [
     difficulty: "Easy to Moderate",
     price: "From $450/person",
   },
+  
 ];
 
 const TripTypesPage = () => (
@@ -137,7 +138,7 @@ const TripTypesPage = () => (
 
       <Grid container spacing={4}>
         {tripTypes.map((trip, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index} sx={{ display: "flex" }}>
+          <Grid xs={12} sm={6} md={4} key={index} sx={{ display: "flex" }} component="div">
             <Card
               sx={{
                 display: "flex",
@@ -146,12 +147,12 @@ const TripTypesPage = () => (
                 borderRadius: 2,
                 overflow: "hidden",
                 // "&:hover": { boxShadow: 6 },
-                width: { xs: 530, sm: 600, md: 559 },
+                // Removed duplicate width property
+                width: { xs: 450, sm: 330, md: 439, lg: 559, xl: 560 },
                 backgroundPosition: "center",
                 alignItems: "center",
                 justifyContent: "center",
                 margin: "auto",
-                width: { xs: 450, sm: 330, md: 439, lg: 559 },
               }}
             >
               <CardMedia
@@ -275,3 +276,5 @@ const TripTypesPage = () => (
 );
 
 export default TripTypesPage;
+
+
