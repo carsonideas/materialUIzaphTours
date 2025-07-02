@@ -1,5 +1,4 @@
-// src/pages/ContactPage.tsx
-// import React from "react";
+
 import {
   Box,
   Container,
@@ -11,7 +10,6 @@ import {
   Breadcrumbs,
   Link,
 } from "@mui/material";
-// import { orange } from "@mui/material/colors";
 
 const ContactPage = () => {
   return (
@@ -58,7 +56,7 @@ const ContactPage = () => {
 
         <Grid container spacing={4}>
           {/* Contact Form */}
-          <Grid item xs={12} md={6}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Paper sx={{ p: 4, borderRadius: 3, boxShadow: 4 }}>
               <Typography
                 variant="h5"
@@ -116,7 +114,7 @@ const ContactPage = () => {
           </Grid>
 
           {/* Contact Info / Image */}
-          <Grid item xs={12} md={6}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Paper
               sx={{
                 borderRadius: 3,
@@ -162,3 +160,4 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+

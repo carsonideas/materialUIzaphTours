@@ -1,5 +1,4 @@
-import React from "react";
-import { Box, Typography, Grid, Paper, Chip, Container } from "@mui/material";
+import { Box, Typography, Grid, Chip, Container } from "@mui/material";
 
 const AboutSection = () => {
   return (
@@ -8,7 +7,7 @@ const AboutSection = () => {
         About Zaph Tours
       </Typography>
       <Grid container spacing={4} alignItems="center">
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Box
             sx={{
               height: { xs: 300, sm: 400, md: 500 },
@@ -33,7 +32,7 @@ const AboutSection = () => {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Typography
             variant="h5"
             gutterBottom
@@ -84,3 +83,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+

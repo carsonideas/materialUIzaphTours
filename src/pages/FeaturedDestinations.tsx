@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Grid, Container, Typography, Card, Button } from "@mui/material";
 
 const destinations = [
@@ -67,10 +66,7 @@ const FeaturedDestinations = () => {
         >
           {destinations.map((dest, i) => (
             <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
+              size={{ xs: 12, sm: 6, md: 4 }}
               key={i}
               sx={{
                 display: "flex",
@@ -163,3 +159,4 @@ const FeaturedDestinations = () => {
 };
 
 export default FeaturedDestinations;
+
