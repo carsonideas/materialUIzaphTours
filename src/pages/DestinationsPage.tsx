@@ -143,9 +143,10 @@ const DestinationsPage = () => {
             href="#"
             sx={{
               textDecoration: "none",
-              "&:hover": { color: "#c33764",
+              "&:hover": {
+                color: "#c33764",
                 // height:100,
-               },
+              },
             }}
           >
             Home
@@ -161,8 +162,8 @@ const DestinationsPage = () => {
             <Grid item xs={12} md={6} lg={4} key={index}>
               <Card
                 sx={{
-                    width: { xs: 530, sm: 559, md: 559 },
-                        //  width:500,
+                  width: { xs: 530, sm: 559, md: 559 },
+                  //  width:500,
                   height: 800,
                   display: "flex",
                   flexDirection: "column",

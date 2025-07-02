@@ -1,5 +1,5 @@
 // src/pages/ContactPage.tsx
-import React from 'react';
+import React from "react";
 import {
   Box,
   Container,
@@ -9,20 +9,26 @@ import {
   TextField,
   Button,
   Breadcrumbs,
-  Link
-} from '@mui/material';
-import { orange } from '@mui/material/colors';
+  Link,
+} from "@mui/material";
+import { orange } from "@mui/material/colors";
 
 const ContactPage = () => {
   return (
-    <Box sx={{ minHeight: '100vh', background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)', paddingTop: '64px' }}>
+    <Box
+      sx={{
+        minHeight: "100vh",
+        background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+        paddingTop: "64px",
+      }}
+    >
       {/* Header */}
       <Paper
         sx={{
-          background: 'linear-gradient(to right, #c33764, #1d2671)',
-          color: 'white',
+          background: "linear-gradient(to right, #c33764, #1d2671)",
+          color: "white",
           py: 6,
-          textAlign: 'center',
+          textAlign: "center",
         }}
       >
         <Container maxWidth="lg">
@@ -38,17 +44,28 @@ const ContactPage = () => {
       <Container maxWidth="lg" sx={{ py: 6 }}>
         {/* Breadcrumbs */}
         <Breadcrumbs sx={{ mb: 4 }}>
-          <Link href="/" underline="none" sx={{ '&:hover': { color: '#c33764' } }}>
+          <Link
+            href="/"
+            underline="none"
+            sx={{ "&:hover": { color: "#c33764" } }}
+          >
             Home
           </Link>
-          <Typography color="#c33764" fontWeight="bold">Contact</Typography>
+          <Typography color="#c33764" fontWeight="bold">
+            Contact
+          </Typography>
         </Breadcrumbs>
 
         <Grid container spacing={4}>
           {/* Contact Form */}
           <Grid item xs={12} md={6}>
             <Paper sx={{ p: 4, borderRadius: 3, boxShadow: 4 }}>
-              <Typography variant="h5" fontWeight="bold" color="#c33764" gutterBottom>
+              <Typography
+                variant="h5"
+                fontWeight="bold"
+                color="#c33764"
+                gutterBottom
+              >
                 Send Us a Message
               </Typography>
               <TextField
@@ -82,14 +99,14 @@ const ContactPage = () => {
                 size="large"
                 sx={{
                   mt: 2,
-                  background: 'linear-gradient(to right, #dd5e89, #f7bb97)',
-                  borderRadius: '30px',
+                  background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  borderRadius: "30px",
                   px: 4,
                   py: 1.5,
-                  fontWeight: 'bold',
-                  '&:hover': {
-                    background: 'linear-gradient(to right, #c33764, #1d2671)',
-                    transform: 'scale(1.03)',
+                  fontWeight: "bold",
+                  "&:hover": {
+                    background: "linear-gradient(to right, #c33764, #1d2671)",
+                    transform: "scale(1.03)",
                   },
                 }}
               >
@@ -106,7 +123,7 @@ const ContactPage = () => {
                 // overflow: 'hidden',
                 // height: '80%',
                 // background: 'url("https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80") center/cover no-repeat',
-                background: 'orange',
+                background: "orange",
                 // background: 'linear-gradient(to right, #dd5e89, #f7bb97)',
                 // background: 'linear-gradient(to right, #c33764, #1d2671)',
                 // display: 'flex',
@@ -116,16 +133,23 @@ const ContactPage = () => {
                 // p: 4,
                 // textAlign: 'center',
                 // // width: 1000,
-
               }}
             >
-              <Box sx={{ backgroundColor: 'rgba(0,0,0,0.5)', borderRadius: 2, p: 4 }}>
+              <Box
+                sx={{
+                  backgroundColor: "rgba(0,0,0,0.5)",
+                  borderRadius: 2,
+                  p: 4,
+                }}
+              >
                 <Typography variant="h5" fontWeight="bold" gutterBottom>
                   Zaph Tours HQ
                 </Typography>
                 <Typography>
-                  Nairobi, Kenya<br />
-                  Phone: +254 712 345 678<br />
+                  Nairobi, Kenya
+                  <br />
+                  Phone: +254 712 345 678
+                  <br />
                   Email: info@zaphtours.com
                 </Typography>
               </Box>

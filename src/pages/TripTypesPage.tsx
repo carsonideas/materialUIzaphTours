@@ -91,7 +91,7 @@ const tripTypes = [
     groupSize: "2-8 people",
     difficulty: "Easy to Moderate",
     price: "From $450/person",
-  }
+  },
 ];
 
 const TripTypesPage = () => (
@@ -99,7 +99,7 @@ const TripTypesPage = () => (
     sx={{
       minHeight: "100vh",
       background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) ",
-      paddingTop: '64px'
+      paddingTop: "64px",
     }}
   >
     <Paper
@@ -148,9 +148,9 @@ const TripTypesPage = () => (
                 // "&:hover": { boxShadow: 6 },
                 width: { xs: 530, sm: 600, md: 559 },
                 backgroundPosition: "center",
-                alignItems: "center", 
-                justifyContent: 'center',
-                margin: 'auto'
+                alignItems: "center",
+                justifyContent: "center",
+                margin: "auto",
               }}
             >
               <CardMedia

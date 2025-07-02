@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Paper, Container, Grid, Typography, Chip, Box } from "@mui/material";
 
 const FooterSection = () => {
@@ -25,7 +25,7 @@ const FooterSection = () => {
             <Typography variant="body2">
               📧 info@zaphtours.com
               <br />
-               +254 700 123 456
+              +254 700 123 456
               <br />
               Nairobi, Kenya
             </Typography>
@@ -79,15 +79,21 @@ const FooterSection = () => {
             borderTop: "1px solid rgba(255,255,255,0.1)",
           }}
         >
-          <Typography variant="body2" sx={{ opacity: 0.8, 
-            background: "linear-gradient(to right, #dd5e89, #f7bb97)", height: 50, paddingTop: 5 
-             // background: "rgba(0, 0, 0, 0.3)",
-        // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-        // background: "linear-gradient(to right, #c33764, #1d2671)",
-        // backdropFilter: "blur(10px)",
-        // boxShadow: "none",
-        // zIndex: 1100,
-            }}>
+          <Typography
+            variant="body2"
+            sx={{
+              opacity: 0.8,
+              background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+              height: 50,
+              paddingTop: 5,
+              // background: "rgba(0, 0, 0, 0.3)",
+              // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+              // background: "linear-gradient(to right, #c33764, #1d2671)",
+              // backdropFilter: "blur(10px)",
+              // boxShadow: "none",
+              // zIndex: 1100,
+            }}
+          >
             © 2024 Zaph Tours. All rights reserved. Best Safaris and
             Adventures.
           </Typography>

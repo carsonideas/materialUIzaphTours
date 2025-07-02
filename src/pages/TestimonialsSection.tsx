@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Container, Typography, Grid, Paper, Avatar, Box } from "@mui/material";
 
 const testimonials = [
@@ -92,10 +92,13 @@ const TestimonialsSection = () => {
               </Box>
 
               <Box>
-                <Typography variant="h6" sx={{ fontWeight: "bold", }}>
-                  {testimonial.name} 
+                <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+                  {testimonial.name}
                 </Typography>
-                <Typography variant="body2" sx={{ opacity: 0.85, marginBottom: 2, }}>
+                <Typography
+                  variant="body2"
+                  sx={{ opacity: 0.85, marginBottom: 2 }}
+                >
                   {testimonial.location}
                 </Typography>
               </Box>

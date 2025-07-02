@@ -1,10 +1,5 @@
-import React from 'react';
-import {
-  Box,
-  Typography,
-  AppBar,
-  Toolbar,
-} from "@mui/material";
+import React from "react";
+import { Box, Typography, AppBar, Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const FixedHeader = () => {
@@ -80,5 +75,3 @@ const FixedHeader = () => {
 };
 
 export default FixedHeader;
-
-

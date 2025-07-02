@@ -72,11 +72,14 @@ const FeaturedDestinations = () => {
               sm={6}
               md={4}
               key={i}
-              sx={{ display: "flex", justifyContent: "center", width: { xs: 250, md: 350 }, }}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                width: { xs: 250, md: 350 },
+              }}
             >
               <Card
                 sx={{
-                    
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",

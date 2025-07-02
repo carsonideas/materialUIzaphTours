@@ -5,8 +5,8 @@ import {
   Container,
   Paper,
   Typography,
-  AppBar,
-  Toolbar,
+  // AppBar,
+  // Toolbar,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -14,7 +14,6 @@ const HeroSection = () => {
   return (
     <Paper
       sx={{
-        
         height: "100vh",
         background:
           'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5")',
@@ -24,10 +23,9 @@ const HeroSection = () => {
         flexDirection: "column",
         color: "white",
         position: "relative",
-        paddingTop: "64px", 
+        paddingTop: "64px",
       }}
     >
-
       {/* Hero Content */}
       <Box
         sx={{
