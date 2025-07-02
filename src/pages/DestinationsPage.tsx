@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Box,
   Container,
@@ -99,7 +99,7 @@ const DestinationsPage = () => {
     startIndex + destinationsPerPage,
   );
 
-  const handlePageChange = (event, value) => {
+  const handlePageChange = (_event: React.ChangeEvent<unknown>, value: number) => {
     setCurrentPage(value);
   };
 
@@ -108,7 +108,7 @@ const DestinationsPage = () => {
       sx={{
         minHeight: "100vh",
         background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
-        paddingTop: "64px", // Account for fixed header
+        paddingTop: "64px", 
       }}
     >
       {/* Header Section */}
@@ -376,3 +376,5 @@ const DestinationsPage = () => {
 };
 
 export default DestinationsPage;
+
+

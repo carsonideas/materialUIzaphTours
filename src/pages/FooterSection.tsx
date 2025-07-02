@@ -14,7 +14,7 @@ const FooterSection = () => {
     >
       <Container maxWidth="lg">
         <Grid container spacing={4}>
-          <Grid item xs={12} md={4}>
+          <Grid xs={12} md={4} component="div">
             <Typography variant="h5" gutterBottom sx={{ color: "#dd5e89" }}>
               Zaph Tours
             </Typography>
@@ -30,7 +30,7 @@ const FooterSection = () => {
               Nairobi, Kenya
             </Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid xs={12} md={4} component="div">
             <Typography variant="h6" gutterBottom>
               Quick Links
             </Typography>
@@ -48,7 +48,7 @@ const FooterSection = () => {
             </Typography>
             <Typography variant="body2">• Contact Us</Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid xs={12} md={4} component="div">
             <Typography variant="h6" gutterBottom>
               Follow Us
             </Typography>
@@ -104,3 +104,5 @@ const FooterSection = () => {
 };
 
 export default FooterSection;
+
+

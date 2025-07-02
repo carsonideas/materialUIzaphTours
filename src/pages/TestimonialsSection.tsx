@@ -44,6 +44,7 @@ const TestimonialsSection = () => {
             md={4}
             key={index}
             sx={{ display: "flex", justifyContent: "center" }}
+            component="div"
           >
             <Paper
               elevation={3}

@@ -1,5 +1,5 @@
 // src/pages/TripTypesPage.tsx
-import { // Removed React import as it's not directly used in JSX transform
+import {
   Box,
   Container,
   Grid,
