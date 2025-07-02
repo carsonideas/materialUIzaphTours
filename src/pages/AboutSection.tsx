@@ -38,7 +38,7 @@ const AboutSection = () => {
             gutterBottom
             sx={{ color: "#c33764", mb: 3 }}
           >
-            Your Gateway to Adventure
+            Karibu Safari! Hakuna Matata
           </Typography>
           <Typography sx={{ lineHeight: 1.8, mb: 3 }}>
             Zaph Tours is Kenya's premier travel company, dedicated to creating

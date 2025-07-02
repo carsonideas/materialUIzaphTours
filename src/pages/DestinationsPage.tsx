@@ -28,11 +28,11 @@ const DestinationsPage = () => {
       individualPrice: "$1,800",
     },
     {
-      name: "Mt. Ruwenzori",
+      name: "Mt. Longonot",
       image:
         "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description:
-        "The legendary Mountains of the Moon with unique flora, glaciers, and challenging trekking routes through mystical landscapes.",
+        "The legendary Mountains craters with unique flora, glaciers, and challenging trekking routes through mystical landscapes.",
       groupPrice: "$1,800",
       individualPrice: "$2,400",
     },

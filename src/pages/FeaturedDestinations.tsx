@@ -18,7 +18,7 @@ const destinations = [
     price: "$1,200",
   },
   {
-    name: "Mt. Ruwenzori",
+    name: "Mt. Longonot",
     image:
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
     description: "The legendary Mountains of the Moon with unique flora.",
@@ -64,7 +64,7 @@ const FeaturedDestinations = () => {
     >
       <Container maxWidth="lg">
         <Typography variant="h3" textAlign="center" gutterBottom sx={{ mb: 3 }}>
-          Featured Destinations
+           Featured Destinations
         </Typography>
         <Grid
           container

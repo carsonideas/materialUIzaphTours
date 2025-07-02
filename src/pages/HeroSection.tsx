@@ -38,10 +38,13 @@ const HeroSection = () => {
       >
         <Container maxWidth="md">
           <Typography variant="h2" gutterBottom>
-            Zaph Tours
+            Zaph Tours Safari
           </Typography>
+          {/* <Typography variant="h4" gutterBottom>
+            Karibu Safari! Hakuna Matata
+          </Typography> */}
           <Typography variant="h4" gutterBottom>
-            Best Safaris and Adventures
+            Safari bila was! was!
           </Typography>
 
           <Link to="/destinations" style={{ textDecoration: "none" }}>

@@ -19,7 +19,7 @@ function GetStartedToday() {
         gutterBottom
         sx={{ fontWeight: "bold" }}
       >
-        Ready for Your Adventure?
+        Simba! Ready for Your Adventure?
       </Typography>
       <Typography variant="h6" sx={{ mb: 4, opacity: 0.9 }}>
         Contact us today to customize your perfect safari experience
