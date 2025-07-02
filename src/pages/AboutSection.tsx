@@ -20,7 +20,8 @@ const AboutSection = () => {
           >
             <img
               // src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-             src="./image4.jpeg"
+            //  src="./image4.jpeg"
+             src="./image6.png"
               alt="African Safari with Elephants"
               style={{
                 width: 500,
