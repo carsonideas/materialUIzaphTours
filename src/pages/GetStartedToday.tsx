@@ -27,7 +27,7 @@ function GetStartedToday() {
       <Button
         variant="contained"
         size="large"
-        href="#contact"
+        href="/contact"
         sx={{
           background: "linear-gradient(to right, #dd5e89, #f7bb97)",
           borderRadius: "30px",
