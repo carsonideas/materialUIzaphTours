@@ -162,10 +162,9 @@ const FeaturedDestinations = () => {
           ))}
         </Grid>
 
-        {/* i have repeated this component the getstarted alot. i have to call it so as to simplify my code. */}
-        
+        {/* i have repeated this component "the getstarted" alot. i have to call it so as to simplify my code. */}
+
         <GetStartedToday />
-        
       </Container>
     </Box>
   );

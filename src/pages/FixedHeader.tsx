@@ -1,11 +1,11 @@
 // import React from "react";
 import { Box, Typography, AppBar, Toolbar, Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import TravelExploreIcon from '@mui/icons-material/TravelExplore';
-import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
-import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
-import { Height } from "@mui/icons-material";
+import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
+import TravelExploreIcon from "@mui/icons-material/TravelExplore";
+import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
+import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
+// import { Height } from "@mui/icons-material";
 // import type { BorderTop } from "@mui/icons-material";
 // import { BorderLeft } from "@mui/icons-material";
 
@@ -19,14 +19,14 @@ const FixedHeader = () => {
     // padding: "10px 10px",
     borderRadius: "8px",
     transition: "all 0.3s ease",
-    marginTop: '4px',
-    
+    marginTop: "4px",
+
     // Height: 2,
     // border: "2px solid white",
     // borderLeft: '  3px solid blue',
     // borderTop: '  3px solid blue',
 
-    '& .MuiButton-startIcon': {
+    "& .MuiButton-startIcon": {
       background: "linear-gradient(to right, #c33764, #1d2671)",
       borderRadius: "50%",
       // padding: "3px",
@@ -35,20 +35,19 @@ const FixedHeader = () => {
       // marginTop: '2px',
     },
 
-    '&:hover': {
+    "&:hover": {
       // background: "linear-gradient(to right, #c33764, #1d2671)",
       transform: "translateY(-2px)",
       // border: '.001px solid white',
-      borderLeft: '  4.5px solid pink',
+      borderLeft: "  4.5px solid pink",
       // border: '1px solid white',
       // Height: 20,
 
-
-      '& .MuiButton-startIcon': {
+      "& .MuiButton-startIcon": {
         // background: "linear-gradient(to right, #a12f5a, #162050)",
         transform: "scale(1.1)",
-      }
-    }
+      },
+    },
   };
 
   return (
@@ -77,7 +76,7 @@ const FixedHeader = () => {
           >
             Home
           </Button>
-          
+
           <Button
             variant="text"
             startIcon={<TravelExploreIcon />}
@@ -87,7 +86,7 @@ const FixedHeader = () => {
           >
             Destinations
           </Button>
-          
+
           <Button
             variant="text"
             startIcon={<FlightTakeoffIcon />}
@@ -97,7 +96,7 @@ const FixedHeader = () => {
           >
             Trip Types
           </Button>
-          
+
           <Button
             variant="text"
             startIcon={<ConnectWithoutContactIcon />}

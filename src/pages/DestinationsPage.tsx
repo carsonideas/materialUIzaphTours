@@ -117,7 +117,6 @@ const DestinationsPage = () => {
         paddingTop: "64px",
       }}
     >
-      {/* Header Section */}
       <Paper
         sx={{
           background: "linear-gradient(to right, #c33764, #1d2671)",
@@ -162,7 +161,6 @@ const DestinationsPage = () => {
           </Typography>
         </Breadcrumbs>
 
-        {/* Destinations Grid */}
         <Box
           sx={{
             display: "grid",
@@ -194,7 +192,6 @@ const DestinationsPage = () => {
                   },
                 }}
               >
-                {/* Destination Image */}
                 <Box
                   sx={{
                     height: 700,
@@ -230,7 +227,6 @@ const DestinationsPage = () => {
                     flexDirection: "column",
                   }}
                 >
-                  {/* Destination Name */}
                   <Typography
                     variant="h5"
                     component="h3"
@@ -243,7 +239,6 @@ const DestinationsPage = () => {
                     {destination.name}
                   </Typography>
 
-                  {/* Short Description */}
                   <Typography
                     variant="body2"
                     sx={{
@@ -256,7 +251,6 @@ const DestinationsPage = () => {
                     {destination.description}
                   </Typography>
 
-                  {/* Pricing Section */}
                   <Box sx={{ mb: 3 }}>
                     <Typography
                       variant="subtitle2"
@@ -292,7 +286,6 @@ const DestinationsPage = () => {
                     </Box>
                   </Box>
 
-                  {/* Link Button */}
                   <Button
                     variant="contained"
                     fullWidth
@@ -341,14 +334,10 @@ const DestinationsPage = () => {
           />
         </Box>
 
-        {/* Call to Action Section */}
-        
-       <GetStartedToday />
-        
+        <GetStartedToday />
       </Container>
       <FooterSection />
     </Box>
-    
   );
 };
 

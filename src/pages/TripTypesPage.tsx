@@ -17,6 +17,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
+
 import { CheckCircle } from "@mui/icons-material";
 import FooterSection from "./FooterSection";
 
@@ -200,13 +201,7 @@ const TripTypesPage = () => (
                       <ListItemIcon sx={{ minWidth: 32 }}>
                         <CheckCircle fontSize="small" color="secondary" />
                       </ListItemIcon>
-                      <ListItemText
-                        primary={feature}
-                        primaryTypographyProps={{
-                          variant: "body2",
-                          color: "#555",
-                        }}
-                      />
+                      <ListItemText primary={feature} />
                     </ListItem>
                   ))}
                 </List>
@@ -286,7 +281,6 @@ const TripTypesPage = () => (
     </Container>
     <FooterSection />
   </Box>
-  
 );
 
 export default TripTypesPage;

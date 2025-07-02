@@ -40,7 +40,6 @@ const ContactPage = () => {
       </Paper>
 
       <Container maxWidth="lg" sx={{ py: 6 }}>
-        {/* Breadcrumbs */}
         <Breadcrumbs sx={{ mb: 4 }}>
           <Link
             href="/"
@@ -55,7 +54,6 @@ const ContactPage = () => {
         </Breadcrumbs>
 
         <Grid container spacing={4}>
-          {/* Contact Form */}
           <Grid size={{ xs: 12, md: 6 }}>
             <Paper sx={{ p: 4, borderRadius: 3, boxShadow: 4 }}>
               <Typography
@@ -113,7 +111,6 @@ const ContactPage = () => {
             </Paper>
           </Grid>
 
-          {/* Contact Info / Image */}
           <Grid size={{ xs: 12, md: 6 }}>
             <Paper
               sx={{

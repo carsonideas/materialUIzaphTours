@@ -42,7 +42,6 @@ const FooterSection = () => {
             gap: 4,
           }}
         >
-          
           <Box>
             <Typography
               variant="h5"
@@ -68,9 +67,8 @@ const FooterSection = () => {
 
                   // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   background: "linear-gradient(to right, #c33764, #1d2671)",
-                
+
                   "&:hover": {
-                    
                     background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   },
                 }}
@@ -83,12 +81,10 @@ const FooterSection = () => {
 
                   // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   background: "linear-gradient(to right, #c33764, #1d2671)",
-                
-                  "&:hover": {
 
+                  "&:hover": {
                     background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   },
-
                 }}
               >
                 <Twitter />
@@ -99,12 +95,10 @@ const FooterSection = () => {
 
                   // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   background: "linear-gradient(to right, #c33764, #1d2671)",
-               
+
                   "&:hover": {
-                    
                     background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   },
-               
                 }}
               >
                 <Instagram />
@@ -115,9 +109,8 @@ const FooterSection = () => {
 
                   // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   background: "linear-gradient(to right, #c33764, #1d2671)",
-               
-               "&:hover": {
-                    
+
+                  "&:hover": {
                     background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   },
                 }}
@@ -127,7 +120,6 @@ const FooterSection = () => {
             </Box>
           </Box>
 
-          
           <Box>
             <Typography
               variant="h6"
@@ -146,12 +138,12 @@ const FooterSection = () => {
                   "&:hover": {
                     color: "purple",
                     textDecoration: "underline",
-                    borderLeft: '3px solid purple',
-                    borderRight: '3px solid purple',
+                    borderLeft: "3px solid purple",
+                    borderRight: "3px solid purple",
                     // marginleft: '2px'
-                    paddingLeft: '10px',
-                    borderRadius: '5px',
-                    marginRight: '190px',
+                    paddingLeft: "10px",
+                    borderRadius: "5px",
+                    marginRight: "190px",
                   },
                 }}
               >
@@ -166,12 +158,12 @@ const FooterSection = () => {
                   "&:hover": {
                     color: "purple",
                     textDecoration: "underline",
-                    borderLeft: '3px solid purple',
-                    borderRight: '3px solid purple',
+                    borderLeft: "3px solid purple",
+                    borderRight: "3px solid purple",
                     // marginleft: '2px'
-                    paddingLeft: '10px',
-                    borderRadius: '5px',
-                    marginRight: '150px',
+                    paddingLeft: "10px",
+                    borderRadius: "5px",
+                    marginRight: "150px",
                   },
                 }}
               >
@@ -185,12 +177,12 @@ const FooterSection = () => {
                   "&:hover": {
                     color: "purple",
                     textDecoration: "underline",
-                    borderLeft: '3px solid purple',
-                    borderRight: '3px solid purple',
+                    borderLeft: "3px solid purple",
+                    borderRight: "3px solid purple",
                     // marginleft: '2px'
-                    paddingLeft: '10px',
-                    borderRadius: '5px',
-                    marginRight: '160px',
+                    paddingLeft: "10px",
+                    borderRadius: "5px",
+                    marginRight: "160px",
                   },
                 }}
               >
@@ -204,12 +196,12 @@ const FooterSection = () => {
                   "&:hover": {
                     color: "purple",
                     textDecoration: "underline",
-                    borderLeft: '3px solid purple',
-                    borderRight: '3px solid purple',
+                    borderLeft: "3px solid purple",
+                    borderRight: "3px solid purple",
                     // marginleft: '2px'
-                    paddingLeft: '10px',
-                    borderRadius: '5px',
-                    marginRight: '180px',
+                    paddingLeft: "10px",
+                    borderRadius: "5px",
+                    marginRight: "180px",
                   },
                 }}
               >
