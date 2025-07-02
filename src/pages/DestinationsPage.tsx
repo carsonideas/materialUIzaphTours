@@ -22,7 +22,8 @@ const DestinationsPage = () => {
   const destinations = [
     {
       name: "Mt. Kenya",
-      image: "image5.png",
+      image: 
+      "https://content.api.news/v3/images/bin/25dc95c6f0f4f34d8e6e99623e7f4827",
         // "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         // "/image5.png",
       description:
