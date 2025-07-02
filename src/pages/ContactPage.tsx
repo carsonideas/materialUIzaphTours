@@ -8,7 +8,9 @@ import {
   Button,
   Breadcrumbs,
   Link,
+  Divider,
 } from "@mui/material";
+import { Phone, Email, LocationOn } from "@mui/icons-material";
 import FooterSection from "./FooterSection";
 
 const ContactPage = () => {
@@ -115,42 +117,136 @@ const ContactPage = () => {
             <Paper
               sx={{
                 borderRadius: 3,
-                // overflow: 'hidden',
-                // height: '80%',
-                // background: 'url("https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80") center/cover no-repeat',
-                background: "orange",
-                // background: 'linear-gradient(to right, #dd5e89, #f7bb97)',
-                // background: 'linear-gradient(to right, #c33764, #1d2671)',
-                // display: 'flex',
-                // alignItems: 'center',
-                // justifyContent: 'center',
-                // color: 'white',
-                // p: 4,
-                // textAlign: 'center',
-                // // width: 1000,
+                overflow: "hidden",
+                boxShadow: 4,
               }}
             >
               <Box
                 sx={{
-                  backgroundColor: "rgba(0,0,0,0.5)",
-                  borderRadius: 2,
-                  p: 4,
+                  background: "linear-gradient(to right, #c33764, #1d2671)",
+                  color: "white",
+                  // marginLeft:10,
+                  p: 1,
                 }}
               >
-                <Typography variant="h5" fontWeight="bold" gutterBottom>
+                <Typography
+                  variant="h5"
+                  fontWeight="bold"
+                  sx={{ marginLeft: 22, color: "orange" }}
+                  gutterBottom
+                >
                   Zaph Tours HQ
                 </Typography>
-                <Typography>
-                  Nairobi, Kenya
-                  <br />
-                  Phone: +254 712 345 678
-                  <br />
-                  Email: info@zaphtours.com
-                </Typography>
+
+                <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                  <LocationOn
+                    sx={{ mr: 2, color: "#f7bb97", marginLeft: 22 }}
+                  />
+                  <Typography variant="body1">Nairobi, Kenya</Typography>
+                </Box>
+
+                <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                  <Phone sx={{ mr: 2, color: "#f7bb97", marginLeft: 22 }} />
+                  <Typography variant="body1">+254 785 493 852</Typography>
+                </Box>
+
+                <Box sx={{ display: "flex", alignItems: "center" }}>
+                  <Email sx={{ mr: 2, color: "#f7bb97", ml: 22 }} />
+                  <Typography variant="body1">info@zaphtours.com</Typography>
+                </Box>
+              </Box>
+
+              <Divider />
+
+              <Box sx={{ height: 400, position: "relative" }}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.19034290707!2d36.68275967671628!3d-1.302809894816087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2s!4v1704963600000!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                />
               </Box>
             </Paper>
           </Grid>
         </Grid>
+
+        {/* Additional Contact Options */}
+        <Box sx={{ mt: 6 }}>
+          <Paper
+            sx={{
+              p: 4,
+              borderRadius: 3,
+              boxShadow: 4,
+              // background: "linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)",
+            }}
+          >
+            <Typography
+              variant="h5"
+              fontWeight="bold"
+              color="#c33764"
+              gutterBottom
+              textAlign="center"
+            >
+              Other Ways to Reach Us
+            </Typography>
+
+            <Grid container spacing={3} sx={{ mt: 2 }}>
+              <Grid size={{ xs: 12, sm: 4 }}>
+                <Box sx={{ textAlign: "center" }}>
+                  <Phone
+                    sx={{
+                      fontSize: 40,
+                      color: "#c33764",
+                      mb: 2,
+                    }}
+                  />
+                  <Typography variant="h6" fontWeight="bold" gutterBottom>
+                    Call Us
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Available 24/7 for emergency support
+                  </Typography>
+                </Box>
+              </Grid>
+
+              <Grid size={{ xs: 12, sm: 4 }}>
+                <Box sx={{ textAlign: "center" }}>
+                  <Email
+                    sx={{
+                      fontSize: 40,
+                      color: "#c33764",
+                      mb: 2,
+                    }}
+                  />
+                  <Typography variant="h6" fontWeight="bold" gutterBottom>
+                    Email Us
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    We'll respond within 24 hours
+                  </Typography>
+                </Box>
+              </Grid>
+
+              <Grid size={{ xs: 12, sm: 4 }}>
+                <Box sx={{ textAlign: "center" }}>
+                  <LocationOn
+                    sx={{
+                      fontSize: 40,
+                      color: "#c33764",
+                      mb: 2,
+                    }}
+                  />
+                  <Typography variant="h6" fontWeight="bold" gutterBottom>
+                    Visit Us
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Monday - Friday, 9 AM - 6 PM
+                  </Typography>
+                </Box>
+              </Grid>
+            </Grid>
+          </Paper>
+        </Box>
       </Container>
       <FooterSection />
     </Box>

@@ -20,8 +20,8 @@ const AboutSection = () => {
           >
             <img
               // src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-            //  src="./image4.jpeg"
-             src="https://img.freepik.com/premium-photo/giraffe-having-fun-eating-popcorn-stylish-glasses_1084926-533.jpg?w=360"
+              //  src="./image4.jpeg"
+              src="https://img.freepik.com/premium-photo/giraffe-having-fun-eating-popcorn-stylish-glasses_1084926-533.jpg?w=360"
               alt="African Safari with Elephants"
               style={{
                 width: 500,
@@ -29,7 +29,7 @@ const AboutSection = () => {
                 objectFit: "cover",
                 objectPosition: "center",
                 display: "block",
-                borderRadius: '19px',
+                borderRadius: "19px",
               }}
             />
           </Box>

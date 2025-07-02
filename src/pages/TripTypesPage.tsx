@@ -25,11 +25,11 @@ const tripTypes = [
   {
     title: "Safari Adventures",
     image:
-    //  "./image4.jpeg",
+      //  "./image4.jpeg",
       "https://content.api.news/v3/images/bin/25dc95c6f0f4f34d8e6e99623e7f4827",
-      // "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    // "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOc_sbgqtP4OYOBwmf5Qht9ItLbxktPgEpw&s",
-      description:
+    description:
       "Experience the Big Five and witness the Great Migration in Kenya's world-renowned national parks and reserves.",
     features: [
       "Game drives in luxury 4x4 vehicles",

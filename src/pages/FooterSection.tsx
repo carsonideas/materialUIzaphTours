@@ -125,7 +125,10 @@ const FooterSection = () => {
               variant="h6"
               component="h4"
               gutterBottom
-              sx={{ fontWeight: "bold", color: "purple" }}
+              sx={{
+                fontWeight: "bold",
+                color: "purple",
+              }}
             >
               Quick Links
             </Typography>
@@ -210,7 +213,6 @@ const FooterSection = () => {
             </Box>
           </Box>
 
-          {/* Contact Info */}
           <Box>
             <Typography
               variant="h6"
@@ -221,27 +223,57 @@ const FooterSection = () => {
               Contact Info
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                <LocationOn sx={{ color: "#dd5e89" }} />
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1,
+                }}
+              >
+                <LocationOn sx={{ color: "purple" }} />
                 <Typography variant="body2">
                   Nairobi, Kenya
                   <br />
                   P.O. Box 12345-00100
                 </Typography>
               </Box>
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                <Phone sx={{ color: "#dd5e89" }} />
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1,
+                }}
+              >
+                <Phone
+                  sx={{
+                    color: "purple",
+                    // color: "black",
+                    // color: "pink",
+                    // color: "blue"
+                  }}
+                />
                 <Typography variant="body2">+254 700 123 456</Typography>
               </Box>
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                <Email sx={{ color: "#dd5e89" }} />
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1,
+                }}
+              >
+                <Email sx={{ color: "purple" }} />
                 <Typography variant="body2">info@zaphtours.com</Typography>
               </Box>
             </Box>
           </Box>
         </Box>
 
-        <Divider sx={{ my: 4, borderColor: "rgba(255,255,255,0.2)" }} />
+        <Divider
+          sx={{
+            my: 4,
+            borderColor: "black",
+          }}
+        />
 
         {/* Bottom Section */}
         <Box
