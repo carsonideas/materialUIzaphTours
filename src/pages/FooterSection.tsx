@@ -37,7 +37,7 @@ const FooterSection = () => {
             gridTemplateColumns: {
               xs: "1fr",
               md: "repeat(3, 1fr)",
-              marginLeft: '60px',
+              marginLeft: "60px",
             },
             gap: 4,
           }}
@@ -51,24 +51,23 @@ const FooterSection = () => {
               sx={{
                 fontWeight: "bold",
                 // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-              //  color: "black",
-
+                //  color: "black",
               }}
             >
               Zaph Tours
             </Typography>
             <Typography variant="body2" sx={{ mb: 3, lineHeight: 1.6 }}>
               Your premier destination for unforgettable adventures across Kenya
-              and East Africa. Experience the wild, climb the peaks, and discover
-              the beauty of Africa with us.
+              and East Africa. Experience the wild, climb the peaks, and
+              discover the beauty of Africa with us.
             </Typography>
             <Box sx={{ display: "flex", gap: 1 }}>
               <IconButton
                 sx={{
                   color: "white",
-                  
-                    // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                  background: "linear-gradient(to right, #c33764, #1d2671)"
+
+                  // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  background: "linear-gradient(to right, #c33764, #1d2671)",
                 }}
               >
                 <Facebook />
@@ -76,9 +75,9 @@ const FooterSection = () => {
               <IconButton
                 sx={{
                   color: "white",
-                 
-                    // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                  background: "linear-gradient(to right, #c33764, #1d2671)"
+
+                  // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  background: "linear-gradient(to right, #c33764, #1d2671)",
                 }}
               >
                 <Twitter />
@@ -86,9 +85,9 @@ const FooterSection = () => {
               <IconButton
                 sx={{
                   color: "white",
-                  
-                    // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                  background: "linear-gradient(to right, #c33764, #1d2671)"
+
+                  // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  background: "linear-gradient(to right, #c33764, #1d2671)",
                 }}
               >
                 <Instagram />
@@ -96,9 +95,9 @@ const FooterSection = () => {
               <IconButton
                 sx={{
                   color: "white",
-                  
-                    // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                  background: "linear-gradient(to right, #c33764, #1d2671)"
+
+                  // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  background: "linear-gradient(to right, #c33764, #1d2671)",
                 }}
               >
                 <LinkedIn />
@@ -130,7 +129,7 @@ const FooterSection = () => {
               >
                 Home
               </Link>
-              
+
               <Link
                 href="/destinations"
                 color="inherit"
@@ -172,8 +171,6 @@ const FooterSection = () => {
               </Link>
             </Box>
           </Box>
-
-          
 
           {/* Contact Info */}
           <Box>
@@ -218,17 +215,18 @@ const FooterSection = () => {
             // gap: 2,
           }}
         >
-          <Typography variant="body2" sx={{
-            // marginLeft: '200px', 
-            // background: 'white',
-            color: 'white',
-            fontSize: 29, margin: 'auto' }}
-             
-            >
+          <Typography
+            variant="body2"
+            sx={{
+              // marginLeft: '200px',
+              // background: 'white',
+              color: "white",
+              fontSize: 29,
+              margin: "auto",
+            }}
+          >
             © 2025 Zaph Tours. All rights reserved.
-           
           </Typography>
-          
         </Box>
       </Container>
     </Box>
@@ -236,4 +234,3 @@ const FooterSection = () => {
 };
 
 export default FooterSection;
-

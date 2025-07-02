@@ -99,7 +99,10 @@ const DestinationsPage = () => {
     startIndex + destinationsPerPage,
   );
 
-  const handlePageChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+  const handlePageChange = (
+    _event: React.ChangeEvent<unknown>,
+    value: number,
+  ) => {
     setCurrentPage(value);
   };
 
@@ -108,7 +111,7 @@ const DestinationsPage = () => {
       sx={{
         minHeight: "100vh",
         background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
-        paddingTop: "64px", 
+        paddingTop: "64px",
       }}
     >
       {/* Header Section */}
@@ -386,6 +389,3 @@ const DestinationsPage = () => {
 };
 
 export default DestinationsPage;
-
-
-

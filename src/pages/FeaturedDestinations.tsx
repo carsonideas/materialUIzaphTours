@@ -1,4 +1,12 @@
-import { Box, Grid, Container, Typography, Card, Button, Paper } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Container,
+  Typography,
+  Card,
+  Button,
+  Paper,
+} from "@mui/material";
 
 const destinations = [
   {
@@ -57,7 +65,6 @@ const FeaturedDestinations = () => {
         <Typography variant="h3" textAlign="center" gutterBottom sx={{ mb: 3 }}>
           Featured Destinations
         </Typography>
-
         <Grid
           container
           spacing={3}
@@ -153,6 +160,8 @@ const FeaturedDestinations = () => {
             </Grid>
           ))}
         </Grid>
+        // i have repeated this component alot. i have to call it so as to
+        simplify my code.
         <Paper
           sx={{
             mt: 8,
@@ -198,10 +207,8 @@ const FeaturedDestinations = () => {
           </Button>
         </Paper>
       </Container>
-      
     </Box>
   );
 };
 
 export default FeaturedDestinations;
-

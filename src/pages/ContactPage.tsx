@@ -1,4 +1,3 @@
-
 import {
   Box,
   Container,
@@ -160,4 +159,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-

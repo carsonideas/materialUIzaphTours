@@ -12,7 +12,7 @@ const FixedHeader = () => {
         // background: "linear-gradient(to right, #c33764, #1d2671)",
         // backdropFilter: "blur(10px)",
         // boxShadow: "none",
-        // zIndex: 1100,
+        // zIndex: 11000000000000,
       }}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>
@@ -20,54 +20,94 @@ const FixedHeader = () => {
           Zaph Tours
         </Typography>
         <Box sx={{ display: "flex", gap: 3 }}>
-          <Link
-            to="/"
+          <button
             style={{
-              color: "white",
-              textDecoration: "none",
-              fontSize: "1rem",
-              fontWeight: "500",
-              transition: "color 0.3s ease",
+              background: "linear-gradient(to right, #c33764, #1d2671)",
+              border: "none",
+              padding: "10px 20px",
+              borderRadius: "4px",
+              cursor: "pointer",
             }}
           >
-            Home
-          </Link>
-          <Link
-            to="/destinations"
+            <Link
+              to="/"
+              style={{
+                color: "white",
+                textDecoration: "none",
+                fontSize: "1.4rem",
+                fontWeight: "1000",
+                transition: "color 0.3s ease",
+              }}
+            >
+              Home
+            </Link>
+          </button>
+          <button
             style={{
-              color: "white",
-              textDecoration: "none",
-              fontSize: "1rem",
-              fontWeight: "500",
-              transition: "color 0.3s ease",
+              background: "linear-gradient(to right, #c33764, #1d2671)",
+              border: "none",
+              padding: "10px 20px",
+              borderRadius: "4px",
+              cursor: "pointer",
             }}
           >
-            Destinations
-          </Link>
-          <Link
-            to="/trip-types"
+            <Link
+              to="/destinations"
+              style={{
+                color: "white",
+                textDecoration: "none",
+                fontSize: "1.4rem",
+                fontWeight: "1000",
+                transition: "color 0.3s ease",
+              }}
+            >
+              Destinations
+            </Link>
+          </button>
+          <button
             style={{
-              color: "white",
-              textDecoration: "none",
-              fontSize: "1rem",
-              fontWeight: "500",
-              transition: "color 0.3s ease",
+              background: "linear-gradient(to right, #c33764, #1d2671)",
+              border: "none",
+              padding: "10px 20px",
+              borderRadius: "4px",
+              cursor: "pointer",
             }}
           >
-            Trip Types
-          </Link>
-          <Link
-            to="/contact"
+            <Link
+              to="/trip-types"
+              style={{
+                color: "white",
+                textDecoration: "none",
+                fontSize: "1.4rem",
+                fontWeight: "1000",
+                transition: "color 0.3s ease",
+              }}
+            >
+              Trip Types
+            </Link>
+          </button>
+          <button
             style={{
-              color: "white",
-              textDecoration: "none",
-              fontSize: "1rem",
-              fontWeight: "500",
-              transition: "color 0.3s ease",
+              background: "linear-gradient(to right, #c33764, #1d2671)",
+              border: "none",
+              padding: "10px 20px",
+              borderRadius: "4px",
+              cursor: "pointer",
             }}
           >
-            Contact Us
-          </Link>
+            <Link
+              to="/contact"
+              style={{
+                color: "white",
+                textDecoration: "none",
+                fontSize: "1.4rem",
+                fontWeight: "1000",
+                transition: "color 0.3s ease",
+              }}
+            >
+              Contact Us
+            </Link>
+          </button>
         </Box>
       </Toolbar>
     </AppBar>

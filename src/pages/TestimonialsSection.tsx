@@ -1,7 +1,12 @@
 // import React from "react";
-import { Container, Typography, 
+import {
+  Container,
+  Typography,
   // Grid,
-   Paper, Avatar, Box } from "@mui/material";
+  Paper,
+  Avatar,
+  Box,
+} from "@mui/material";
 
 const testimonials = [
   {
@@ -45,7 +50,7 @@ const TestimonialsSection = () => {
             sm: "repeat(3, 1fr)",
             md: "repeat(4, 1fr)",
             // maxWidth: 1400
-            marginRight: '10px'
+            marginRight: "10px",
           },
           gap: 4,
           justifyItems: "center",
@@ -53,10 +58,7 @@ const TestimonialsSection = () => {
         }}
       >
         {testimonials.map((testimonial, index) => (
-          <Box
-            key={index}
-            sx={{ display: "flex", justifyContent: "center" }}
-          >
+          <Box key={index} sx={{ display: "flex", justifyContent: "center" }}>
             <Paper
               elevation={3}
               sx={{
@@ -123,6 +125,3 @@ const TestimonialsSection = () => {
 };
 
 export default TestimonialsSection;
-
-
-
