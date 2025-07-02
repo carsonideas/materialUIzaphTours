@@ -163,9 +163,9 @@ const DestinationsPage = () => {
             gridTemplateColumns: {
               xs: "1fr",
               md: "repeat(2, 1fr)",
-              lg: "repeat(3, 1fr)",
+              lg: "repeat(2, 1fr)",
             },
-            gap: 4,
+            gap: 3,
           }}
         >
           {currentDestinations.map((destination, index) => (
