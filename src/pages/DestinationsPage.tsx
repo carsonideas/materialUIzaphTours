@@ -162,7 +162,8 @@ const DestinationsPage = () => {
             <Grid item xs={12} md={6} lg={4} key={index}>
               <Card
                 sx={{
-                  width: { xs: 530, sm: 559, md: 559 },
+                  width: { xs: 450, sm: 330, md: 439, lg: 559 },
+                  // height: { xs: 450, sm: 330, md: 439, lg: 559 }
                   //  width:500,
                   height: 800,
                   display: "flex",

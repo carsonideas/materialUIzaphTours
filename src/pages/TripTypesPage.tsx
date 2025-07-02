@@ -151,6 +151,7 @@ const TripTypesPage = () => (
                 alignItems: "center",
                 justifyContent: "center",
                 margin: "auto",
+                width: { xs: 450, sm: 330, md: 439, lg: 559 },
               }}
             >
               <CardMedia
