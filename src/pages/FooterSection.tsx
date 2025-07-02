@@ -22,10 +22,12 @@ const FooterSection = () => {
     <Box
       component="footer"
       sx={{
-        background: "linear-gradient(135deg, #2c3e50 0%, #34495e 100%)",
+        // background: "linear-gradient(135deg, #2c3e50 0%, #34495e 100%)",
         color: "white",
         py: 6,
         mt: 8,
+        // background: "linear-gradient(to right, #c33764, #1d2671)"
+        background: "linear-gradient(to right, #dd5e89, #f7bb97)",
       }}
     >
       <Container maxWidth="lg">
@@ -34,7 +36,8 @@ const FooterSection = () => {
             display: "grid",
             gridTemplateColumns: {
               xs: "1fr",
-              md: "repeat(4, 1fr)",
+              md: "repeat(3, 1fr)",
+              marginLeft: '60px',
             },
             gap: 4,
           }}
@@ -47,10 +50,9 @@ const FooterSection = () => {
               gutterBottom
               sx={{
                 fontWeight: "bold",
-                background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                backgroundClip: "text",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+              //  color: "black",
+
               }}
             >
               Zaph Tours
@@ -64,9 +66,9 @@ const FooterSection = () => {
               <IconButton
                 sx={{
                   color: "white",
-                  "&:hover": {
-                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                  },
+                  
+                    // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  background: "linear-gradient(to right, #c33764, #1d2671)"
                 }}
               >
                 <Facebook />
@@ -74,9 +76,9 @@ const FooterSection = () => {
               <IconButton
                 sx={{
                   color: "white",
-                  "&:hover": {
-                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                  },
+                 
+                    // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  background: "linear-gradient(to right, #c33764, #1d2671)"
                 }}
               >
                 <Twitter />
@@ -84,9 +86,9 @@ const FooterSection = () => {
               <IconButton
                 sx={{
                   color: "white",
-                  "&:hover": {
-                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                  },
+                  
+                    // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  background: "linear-gradient(to right, #c33764, #1d2671)"
                 }}
               >
                 <Instagram />
@@ -94,9 +96,9 @@ const FooterSection = () => {
               <IconButton
                 sx={{
                   color: "white",
-                  "&:hover": {
-                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                  },
+                  
+                    // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  background: "linear-gradient(to right, #c33764, #1d2671)"
                 }}
               >
                 <LinkedIn />
@@ -116,7 +118,7 @@ const FooterSection = () => {
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
               <Link
-                href="#home"
+                href="/"
                 color="inherit"
                 underline="none"
                 sx={{
@@ -128,21 +130,9 @@ const FooterSection = () => {
               >
                 Home
               </Link>
+              
               <Link
-                href="#about"
-                color="inherit"
-                underline="none"
-                sx={{
-                  "&:hover": {
-                    color: "#dd5e89",
-                    textDecoration: "underline",
-                  },
-                }}
-              >
-                About Us
-              </Link>
-              <Link
-                href="#destinations"
+                href="/destinations"
                 color="inherit"
                 underline="none"
                 sx={{
@@ -155,7 +145,7 @@ const FooterSection = () => {
                 Destinations
               </Link>
               <Link
-                href="#trip-types"
+                href="/trip-types"
                 color="inherit"
                 underline="none"
                 sx={{
@@ -168,7 +158,7 @@ const FooterSection = () => {
                 Trip Types
               </Link>
               <Link
-                href="#contact"
+                href="/contact"
                 color="inherit"
                 underline="none"
                 sx={{
@@ -183,25 +173,7 @@ const FooterSection = () => {
             </Box>
           </Box>
 
-          {/* Services */}
-          <Box>
-            <Typography
-              variant="h6"
-              component="h4"
-              gutterBottom
-              sx={{ fontWeight: "bold", color: "#dd5e89" }}
-            >
-              Our Services
-            </Typography>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-              <Typography variant="body2">Safari Adventures</Typography>
-              <Typography variant="body2">Mountain Expeditions</Typography>
-              <Typography variant="body2">Beach & Coastal Tours</Typography>
-              <Typography variant="body2">Cultural Experiences</Typography>
-              <Typography variant="body2">Photography Tours</Typography>
-              <Typography variant="body2">Custom Packages</Typography>
-            </Box>
-          </Box>
+          
 
           {/* Contact Info */}
           <Box>
@@ -243,42 +215,20 @@ const FooterSection = () => {
             justifyContent: "space-between",
             alignItems: "center",
             flexWrap: "wrap",
-            gap: 2,
+            // gap: 2,
           }}
         >
-          <Typography variant="body2" sx={{ opacity: 0.8 }}>
-            © 2024 Zaph Tours. All rights reserved.
+          <Typography variant="body2" sx={{
+            // marginLeft: '200px', 
+            // background: 'white',
+            color: 'white',
+            fontSize: 29, margin: 'auto' }}
+             
+            >
+            © 2025 Zaph Tours. All rights reserved.
+           
           </Typography>
-          <Box sx={{ display: "flex", gap: 3 }}>
-            <Link
-              href="#privacy"
-              color="inherit"
-              underline="none"
-              sx={{
-                opacity: 0.8,
-                "&:hover": {
-                  color: "#dd5e89",
-                  textDecoration: "underline",
-                },
-              }}
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="#terms"
-              color="inherit"
-              underline="none"
-              sx={{
-                opacity: 0.8,
-                "&:hover": {
-                  color: "#dd5e89",
-                  textDecoration: "underline",
-                },
-              }}
-            >
-              Terms of Service
-            </Link>
-          </Box>
+          
         </Box>
       </Container>
     </Box>
