@@ -14,10 +14,12 @@ const HeroSection = () => {
   return (
     <Paper
       sx={{
+        
         height: "100vh",
         background:
-          'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5")',
-        backgroundSize: "cover",
+          // 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5")',
+        'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/image2.png")',
+          backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",
         flexDirection: "column",

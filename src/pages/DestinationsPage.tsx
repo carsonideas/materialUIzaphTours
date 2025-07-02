@@ -1,3 +1,5 @@
+
+
 import { useState } from "react";
 import {
   Box,
@@ -20,8 +22,9 @@ const DestinationsPage = () => {
   const destinations = [
     {
       name: "Mt. Kenya",
-      image:
-        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "image5.png",
+        // "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        // "/image5.png",
       description:
         "Africa's second highest peak offering incredible climbing and hiking experiences with stunning alpine scenery and diverse wildlife.",
       groupPrice: "$1,200",

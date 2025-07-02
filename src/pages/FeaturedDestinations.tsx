@@ -13,7 +13,8 @@ const destinations = [
   {
     name: "Mt. Kenya",
     image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=800&q=80",
+    "/image5.png",
+      // "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=800&q=80",
     description: "Africa's second highest peak with alpine scenery and hiking.",
     price: "$1,200",
   },
