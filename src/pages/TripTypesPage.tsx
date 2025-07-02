@@ -2,7 +2,7 @@
 import {
   Box,
   Container,
-  Grid,
+  // Grid,
   Card,
   CardMedia,
   CardContent,
@@ -136,9 +136,19 @@ const TripTypesPage = () => (
         </Typography>
       </Breadcrumbs>
 
-      <Grid container spacing={4}>
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: {
+            xs: "1fr",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+          },
+          gap: 4,
+        }}
+      >
         {tripTypes.map((trip, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index} sx={{ display: "flex" }} component="div">
+          <Box key={index} sx={{ display: "flex" }}>
             <Card
               sx={{
                 display: "flex",
@@ -268,9 +278,9 @@ const TripTypesPage = () => (
                 </Button>
               </CardContent>
             </Card>
-          </Grid>
+          </Box>
         ))}
-      </Grid>
+      </Box>
     </Container>
   </Box>
 );

@@ -1,5 +1,7 @@
 // import React from "react";
-import { Container, Typography, Grid, Paper, Avatar, Box } from "@mui/material";
+import { Container, Typography, 
+  // Grid,
+   Paper, Avatar, Box } from "@mui/material";
 
 const testimonials = [
   {
@@ -35,13 +37,21 @@ const TestimonialsSection = () => {
         What Our Travelers Say
       </Typography>
 
-      <Grid container spacing={4} justifyContent="center" alignItems="stretch">
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: {
+            xs: "1fr",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+          },
+          gap: 4,
+          justifyItems: "center",
+          alignItems: "stretch",
+        }}
+      >
         {testimonials.map((testimonial, index) => (
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={4}
+          <Box
             key={index}
             sx={{ display: "flex", justifyContent: "center" }}
           >
@@ -103,9 +113,9 @@ const TestimonialsSection = () => {
                 </Typography>
               </Box>
             </Paper>
-          </Grid>
+          </Box>
         ))}
-      </Grid>
+      </Box>
     </Container>
   );
 };

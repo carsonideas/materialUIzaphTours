@@ -2,7 +2,7 @@ import { useState } from "react";
 import {
   Box,
   Container,
-  Grid,
+  // Grid,
   Card,
   Paper,
   Typography,
@@ -157,9 +157,19 @@ const DestinationsPage = () => {
         </Breadcrumbs>
 
         {/* Destinations Grid */}
-        <Grid container spacing={4}>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr",
+              md: "repeat(2, 1fr)",
+              lg: "repeat(3, 1fr)",
+            },
+            gap: 4,
+          }}
+        >
           {currentDestinations.map((destination, index) => (
-            <Grid item xs={12} md={6} lg={4} key={index} component="div">
+            <Box key={index}>
               <Card
                 sx={{
                   width: { xs: 450, sm: 330, md: 439, lg: 559, xl: 560 },
@@ -299,9 +309,9 @@ const DestinationsPage = () => {
                   </Button>
                 </Box>
               </Card>
-            </Grid>
+            </Box>
           ))}
-        </Grid>
+        </Box>
 
         {/* Pagination */}
         <Box sx={{ display: "flex", justifyContent: "center", mt: 6 }}>

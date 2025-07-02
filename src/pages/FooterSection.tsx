@@ -1,381 +1,289 @@
-import { useState } from "react";
 import {
   Box,
   Container,
-  Grid,
-  Card,
-  Paper,
+  // Grid,
   Typography,
-  Button,
-  Chip,
-  Breadcrumbs,
   Link,
-  Pagination,
+  IconButton,
+  Divider,
 } from "@mui/material";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  LinkedIn,
+  Email,
+  Phone,
+  LocationOn,
+} from "@mui/icons-material";
 
-const DestinationsPage = () => {
-  const destinations = [
-    {
-      name: "Mt. Kenya",
-      image:
-        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description:
-        "Africa's second highest peak offering incredible climbing and hiking experiences with stunning alpine scenery and diverse wildlife.",
-      groupPrice: "$1,200",
-      individualPrice: "$1,800",
-    },
-    {
-      name: "Mt. Ruwenzori",
-      image:
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description:
-        "The legendary Mountains of the Moon with unique flora, glaciers, and challenging trekking routes through mystical landscapes.",
-      groupPrice: "$1,800",
-      individualPrice: "$2,400",
-    },
-    {
-      name: "Lake Nakuru",
-      image:
-        "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description:
-        "Famous for its flamingo populations and diverse bird species in this spectacular alkaline lake surrounded by acacia woodlands.",
-      groupPrice: "$450",
-      individualPrice: "$650",
-    },
-    {
-      name: "Tsavo National Park",
-      image:
-        "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description:
-        "Kenya's largest national park, home to the famous red elephants, lions, leopards and diverse wildlife in vast savannah landscapes.",
-      groupPrice: "$680",
-      individualPrice: "$920",
-    },
-    {
-      name: "Nairobi National Park",
-      image:
-        "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description:
-        "Unique urban wildlife park with lions, giraffes, rhinos and zebras against the city skyline backdrop - truly one of a kind.",
-      groupPrice: "$280",
-      individualPrice: "$380",
-    },
-    {
-      name: "Coastal Kenya",
-      image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description:
-        "Pristine white sand beaches, coral reefs, and rich Swahili culture along the Indian Ocean with crystal clear waters.",
-      groupPrice: "$850",
-      individualPrice: "$1,150",
-    },
-    {
-      name: "Amboseli National Park",
-      image:
-        "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description:
-        "Famous for its large elephant herds and stunning views of Mount Kilimanjaro across the border in Tanzania.",
-      groupPrice: "$720",
-      individualPrice: "$950",
-    },
-    {
-      name: "Samburu National Reserve",
-      image:
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description:
-        "Home to unique wildlife species including Grevy's zebras, reticulated giraffes, and Somali ostriches in arid landscapes.",
-      groupPrice: "$590",
-      individualPrice: "$780",
-    },
-  ];
-
-  const [currentPage, setCurrentPage] = useState(1);
-  const destinationsPerPage = 6;
-  const totalPages = Math.ceil(destinations.length / destinationsPerPage);
-
-  const startIndex = (currentPage - 1) * destinationsPerPage;
-  const currentDestinations = destinations.slice(
-    startIndex,
-    startIndex + destinationsPerPage,
-  );
-
-  const handlePageChange = (_event: React.ChangeEvent<unknown>, value: number) => {
-    setCurrentPage(value);
-  };
-
+const FooterSection = () => {
   return (
     <Box
+      component="footer"
       sx={{
-        minHeight: "100vh",
-        background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
-        paddingTop: "64px", 
+        background: "linear-gradient(135deg, #2c3e50 0%, #34495e 100%)",
+        color: "white",
+        py: 6,
+        mt: 8,
       }}
     >
-      {/* Header Section */}
-      <Paper
-        sx={{
-          background: "linear-gradient(to right, #c33764, #1d2671)",
-          color: "white",
-          py: 6,
-          textAlign: "center",
-        }}
-      >
-        <Container maxWidth="lg">
-          <Typography
-            variant="h2"
-            component="h1"
-            gutterBottom
-            sx={{ fontWeight: "bold" }}
-          >
-            Our Amazing Destinations
-          </Typography>
-          <Typography variant="h6" sx={{ opacity: 0.9 }}>
-            Discover breathtaking locations across Kenya and East Africa
-          </Typography>
-        </Container>
-      </Paper>
-
-      <Container maxWidth="lg" sx={{ py: 6 }}>
-        {/* Breadcrumbs */}
-        <Breadcrumbs sx={{ mb: 4 }}>
-          <Link
-            color="inherit"
-            href="#"
-            sx={{
-              textDecoration: "none",
-              "&:hover": {
-                color: "#c33764",
-                // height:100,
-              },
-            }}
-          >
-            Home
-          </Link>
-          <Typography sx={{ color: "#c33764", fontWeight: "bold" }}>
-            Destinations
-          </Typography>
-        </Breadcrumbs>
-
-        {/* Destinations Grid */}
-        <Grid container spacing={4}>
-          {currentDestinations.map((destination, index) => (
-            <Grid item xs={12} md={6} lg={4} key={index} component="div">
-              <Card
+      <Container maxWidth="lg">
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr",
+              md: "repeat(4, 1fr)",
+            },
+            gap: 4,
+          }}
+        >
+          {/* Company Info */}
+          <Box>
+            <Typography
+              variant="h5"
+              component="h3"
+              gutterBottom
+              sx={{
+                fontWeight: "bold",
+                background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Zaph Tours
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 3, lineHeight: 1.6 }}>
+              Your premier destination for unforgettable adventures across Kenya
+              and East Africa. Experience the wild, climb the peaks, and discover
+              the beauty of Africa with us.
+            </Typography>
+            <Box sx={{ display: "flex", gap: 1 }}>
+              <IconButton
                 sx={{
-                  width: { xs: 450, sm: 330, md: 439, lg: 559, xl: 560 },
-                  // width: { xs: 450, sm: 330, md: 439, lg: 559 }
-                  // height: { xs: 450, sm: 330, md: 439, lg: 559 }
-                  //  width:500,
-                  height: 600,
-                  display: "flex",
-                  flexDirection: "column",
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  borderRadius: "15px",
-                  overflow: "hidden",
+                  color: "white",
                   "&:hover": {
-                    transform: "scale(1.05)",
-                    boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   },
                 }}
               >
-                {/* Destination Image */}
-                <Box
-                  sx={{
-                    height: 700,
-                    background: `url(${destination.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    position: "relative",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      position: "absolute",
-                      top: 15,
-                      right: 15,
-                      background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                      color: "white",
-                      px: 2,
-                      py: 1,
-                      borderRadius: "20px",
-                      fontSize: "0.8rem",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Popular
-                  </Box>
-                </Box>
-
-                <Box
-                  sx={{
-                    p: 3,
-                    flexGrow: 1,
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  {/* Destination Name */}
-                  <Typography
-                    variant="h5"
-                    component="h3"
-                    gutterBottom
-                    sx={{
-                      color: "#c33764",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {destination.name}
-                  </Typography>
-
-                  {/* Short Description */}
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      flexGrow: 1,
-                      mb: 3,
-                      lineHeight: 1.6,
-                      color: "#666",
-                    }}
-                  >
-                    {destination.description}
-                  </Typography>
-
-                  {/* Pricing Section */}
-                  <Box sx={{ mb: 3 }}>
-                    <Typography
-                      variant="subtitle2"
-                      sx={{
-                        color: "#dd5e89",
-                        fontWeight: "bold",
-                        mb: 2,
-                      }}
-                    >
-                      Pricing Options:
-                    </Typography>
-                    <Box
-                      sx={{ display: "flex", gap: 1, mb: 2, flexWrap: "wrap" }}
-                    >
-                      <Chip
-                        label={`Group: ${destination.groupPrice}`}
-                        sx={{
-                          background:
-                            "linear-gradient(to right, #dd5e89, #f7bb97)",
-                          color: "white",
-                          fontWeight: "bold",
-                        }}
-                      />
-                      <Chip
-                        label={`Individual: ${destination.individualPrice}`}
-                        sx={{
-                          background:
-                            "linear-gradient(to right, #c33764, #1d2671)",
-                          color: "white",
-                          fontWeight: "bold",
-                        }}
-                      />
-                    </Box>
-                  </Box>
-
-                  {/* Link Button */}
-                  <Button
-                    variant="contained"
-                    fullWidth
-                    href="#destination-details"
-                    sx={{
-                      background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-                      borderRadius: "30px",
-                      py: 1.5,
-                      fontWeight: "bold",
-                      transition: "all 0.3s ease",
-                      "&:hover": {
-                        background:
-                          "linear-gradient(to right, #c33764, #1d2671)",
-                        transform: "scale(1.05)",
-                        boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
-                      },
-                    }}
-                  >
-                    View Details
-                  </Button>
-                </Box>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-
-        {/* Pagination */}
-        <Box sx={{ display: "flex", justifyContent: "center", mt: 6 }}>
-          <Pagination
-            count={totalPages}
-            page={currentPage}
-            onChange={handlePageChange}
-            color="primary"
-            size="large"
-            sx={{
-              "& .MuiPaginationItem-root": {
-                "&.Mui-selected": {
-                  background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                <Facebook />
+              </IconButton>
+              <IconButton
+                sx={{
                   color: "white",
                   "&:hover": {
-                    background: "linear-gradient(to right, #c33764, #1d2671)",
+                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   },
-                },
-              },
-            }}
-          />
+                }}
+              >
+                <Twitter />
+              </IconButton>
+              <IconButton
+                sx={{
+                  color: "white",
+                  "&:hover": {
+                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  },
+                }}
+              >
+                <Instagram />
+              </IconButton>
+              <IconButton
+                sx={{
+                  color: "white",
+                  "&:hover": {
+                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  },
+                }}
+              >
+                <LinkedIn />
+              </IconButton>
+            </Box>
+          </Box>
+
+          {/* Quick Links */}
+          <Box>
+            <Typography
+              variant="h6"
+              component="h4"
+              gutterBottom
+              sx={{ fontWeight: "bold", color: "#dd5e89" }}
+            >
+              Quick Links
+            </Typography>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+              <Link
+                href="#home"
+                color="inherit"
+                underline="none"
+                sx={{
+                  "&:hover": {
+                    color: "#dd5e89",
+                    textDecoration: "underline",
+                  },
+                }}
+              >
+                Home
+              </Link>
+              <Link
+                href="#about"
+                color="inherit"
+                underline="none"
+                sx={{
+                  "&:hover": {
+                    color: "#dd5e89",
+                    textDecoration: "underline",
+                  },
+                }}
+              >
+                About Us
+              </Link>
+              <Link
+                href="#destinations"
+                color="inherit"
+                underline="none"
+                sx={{
+                  "&:hover": {
+                    color: "#dd5e89",
+                    textDecoration: "underline",
+                  },
+                }}
+              >
+                Destinations
+              </Link>
+              <Link
+                href="#trip-types"
+                color="inherit"
+                underline="none"
+                sx={{
+                  "&:hover": {
+                    color: "#dd5e89",
+                    textDecoration: "underline",
+                  },
+                }}
+              >
+                Trip Types
+              </Link>
+              <Link
+                href="#contact"
+                color="inherit"
+                underline="none"
+                sx={{
+                  "&:hover": {
+                    color: "#dd5e89",
+                    textDecoration: "underline",
+                  },
+                }}
+              >
+                Contact
+              </Link>
+            </Box>
+          </Box>
+
+          {/* Services */}
+          <Box>
+            <Typography
+              variant="h6"
+              component="h4"
+              gutterBottom
+              sx={{ fontWeight: "bold", color: "#dd5e89" }}
+            >
+              Our Services
+            </Typography>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+              <Typography variant="body2">Safari Adventures</Typography>
+              <Typography variant="body2">Mountain Expeditions</Typography>
+              <Typography variant="body2">Beach & Coastal Tours</Typography>
+              <Typography variant="body2">Cultural Experiences</Typography>
+              <Typography variant="body2">Photography Tours</Typography>
+              <Typography variant="body2">Custom Packages</Typography>
+            </Box>
+          </Box>
+
+          {/* Contact Info */}
+          <Box>
+            <Typography
+              variant="h6"
+              component="h4"
+              gutterBottom
+              sx={{ fontWeight: "bold", color: "#dd5e89" }}
+            >
+              Contact Info
+            </Typography>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <LocationOn sx={{ color: "#dd5e89" }} />
+                <Typography variant="body2">
+                  Nairobi, Kenya
+                  <br />
+                  P.O. Box 12345-00100
+                </Typography>
+              </Box>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Phone sx={{ color: "#dd5e89" }} />
+                <Typography variant="body2">+254 700 123 456</Typography>
+              </Box>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Email sx={{ color: "#dd5e89" }} />
+                <Typography variant="body2">info@zaphtours.com</Typography>
+              </Box>
+            </Box>
+          </Box>
         </Box>
 
-        {/* Call to Action Section */}
-        <Paper
+        <Divider sx={{ my: 4, borderColor: "rgba(255,255,255,0.2)" }} />
+
+        {/* Bottom Section */}
+        <Box
           sx={{
-            mt: 8,
-            p: 6,
-            textAlign: "center",
-            background: "linear-gradient(to right, #c33764, #1d2671)",
-            color: "white",
-            borderRadius: "20px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: 2,
           }}
         >
-          <Typography
-            variant="h4"
-            component="h2"
-            gutterBottom
-            sx={{ fontWeight: "bold" }}
-          >
-            Ready for Your Adventure?
+          <Typography variant="body2" sx={{ opacity: 0.8 }}>
+            © 2024 Zaph Tours. All rights reserved.
           </Typography>
-          <Typography variant="h6" sx={{ mb: 4, opacity: 0.9 }}>
-            Contact us today to customize your perfect safari experience
-          </Typography>
-          <Button
-            variant="contained"
-            size="large"
-            href="#contact"
-            sx={{
-              background: "linear-gradient(to right, #dd5e89, #f7bb97)",
-              borderRadius: "30px",
-              px: 4,
-              py: 2,
-              fontSize: "1.1rem",
-              fontWeight: "bold",
-              transition: "all 0.3s ease",
-              "&:hover": {
-                background: "white",
-                color: "#c33764",
-                transform: "scale(1.05)",
-                boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
-              },
-            }}
-          >
-            Get Started Today
-          </Button>
-        </Paper>
+          <Box sx={{ display: "flex", gap: 3 }}>
+            <Link
+              href="#privacy"
+              color="inherit"
+              underline="none"
+              sx={{
+                opacity: 0.8,
+                "&:hover": {
+                  color: "#dd5e89",
+                  textDecoration: "underline",
+                },
+              }}
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="#terms"
+              color="inherit"
+              underline="none"
+              sx={{
+                opacity: 0.8,
+                "&:hover": {
+                  color: "#dd5e89",
+                  textDecoration: "underline",
+                },
+              }}
+            >
+              Terms of Service
+            </Link>
+          </Box>
+        </Box>
       </Container>
     </Box>
   );
 };
 
-export default DestinationsPage;
-
-
+export default FooterSection;
 
