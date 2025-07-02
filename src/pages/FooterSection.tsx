@@ -42,7 +42,7 @@ const FooterSection = () => {
             gap: 4,
           }}
         >
-          {/* Company Info */}
+          
           <Box>
             <Typography
               variant="h5"
@@ -68,6 +68,11 @@ const FooterSection = () => {
 
                   // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   background: "linear-gradient(to right, #c33764, #1d2671)",
+                
+                  "&:hover": {
+                    
+                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  },
                 }}
               >
                 <Facebook />
@@ -78,6 +83,12 @@ const FooterSection = () => {
 
                   // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   background: "linear-gradient(to right, #c33764, #1d2671)",
+                
+                  "&:hover": {
+
+                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  },
+
                 }}
               >
                 <Twitter />
@@ -88,6 +99,12 @@ const FooterSection = () => {
 
                   // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   background: "linear-gradient(to right, #c33764, #1d2671)",
+               
+                  "&:hover": {
+                    
+                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  },
+               
                 }}
               >
                 <Instagram />
@@ -98,6 +115,11 @@ const FooterSection = () => {
 
                   // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   background: "linear-gradient(to right, #c33764, #1d2671)",
+               
+               "&:hover": {
+                    
+                    background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  },
                 }}
               >
                 <LinkedIn />
@@ -105,13 +127,13 @@ const FooterSection = () => {
             </Box>
           </Box>
 
-          {/* Quick Links */}
+          
           <Box>
             <Typography
               variant="h6"
               component="h4"
               gutterBottom
-              sx={{ fontWeight: "bold", color: "#dd5e89" }}
+              sx={{ fontWeight: "bold", color: "purple" }}
             >
               Quick Links
             </Typography>
@@ -122,8 +144,14 @@ const FooterSection = () => {
                 underline="none"
                 sx={{
                   "&:hover": {
-                    color: "#dd5e89",
+                    color: "purple",
                     textDecoration: "underline",
+                    borderLeft: '3px solid purple',
+                    borderRight: '3px solid purple',
+                    // marginleft: '2px'
+                    paddingLeft: '10px',
+                    borderRadius: '5px',
+                    marginRight: '190px',
                   },
                 }}
               >
@@ -136,8 +164,14 @@ const FooterSection = () => {
                 underline="none"
                 sx={{
                   "&:hover": {
-                    color: "#dd5e89",
+                    color: "purple",
                     textDecoration: "underline",
+                    borderLeft: '3px solid purple',
+                    borderRight: '3px solid purple',
+                    // marginleft: '2px'
+                    paddingLeft: '10px',
+                    borderRadius: '5px',
+                    marginRight: '150px',
                   },
                 }}
               >
@@ -149,8 +183,14 @@ const FooterSection = () => {
                 underline="none"
                 sx={{
                   "&:hover": {
-                    color: "#dd5e89",
+                    color: "purple",
                     textDecoration: "underline",
+                    borderLeft: '3px solid purple',
+                    borderRight: '3px solid purple',
+                    // marginleft: '2px'
+                    paddingLeft: '10px',
+                    borderRadius: '5px',
+                    marginRight: '160px',
                   },
                 }}
               >
@@ -162,8 +202,14 @@ const FooterSection = () => {
                 underline="none"
                 sx={{
                   "&:hover": {
-                    color: "#dd5e89",
+                    color: "purple",
                     textDecoration: "underline",
+                    borderLeft: '3px solid purple',
+                    borderRight: '3px solid purple',
+                    // marginleft: '2px'
+                    paddingLeft: '10px',
+                    borderRadius: '5px',
+                    marginRight: '180px',
                   },
                 }}
               >
@@ -178,7 +224,7 @@ const FooterSection = () => {
               variant="h6"
               component="h4"
               gutterBottom
-              sx={{ fontWeight: "bold", color: "#dd5e89" }}
+              sx={{ fontWeight: "bold", color: "purple" }}
             >
               Contact Info
             </Typography>

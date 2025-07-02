@@ -7,6 +7,7 @@ import FeaturedDestinations from "./FeaturedDestinations";
 import TestimonialsSection from "./TestimonialsSection";
 import NewsletterSection from "./NewsletterSection";
 import FooterSection from "./FooterSection";
+
 // import DestinationsPage from './DestinationsPage';
 // import App from 'App';
 

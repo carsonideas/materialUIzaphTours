@@ -8,6 +8,7 @@ import ContactPage from "./pages/ContactPage";
 import TripTypesPage from "./pages/TripTypesPage";
 import Home from "./pages/Home";
 import FixedHeader from "./pages/FixedHeader";
+// import ReadyAdventure from ReadyAdventure
 // import HeroSection from './pages/HeroSection';
 // import HeroSection from './pages/HeroSection';
 

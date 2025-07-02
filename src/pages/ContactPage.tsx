@@ -9,6 +9,7 @@ import {
   Breadcrumbs,
   Link,
 } from "@mui/material";
+import FooterSection from "./FooterSection";
 
 const ContactPage = () => {
   return (
@@ -154,6 +155,7 @@ const ContactPage = () => {
           </Grid>
         </Grid>
       </Container>
+      <FooterSection />
     </Box>
   );
 };
