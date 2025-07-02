@@ -44,6 +44,8 @@ const TestimonialsSection = () => {
             xs: "repeat(2, 1fr)",
             sm: "repeat(3, 1fr)",
             md: "repeat(4, 1fr)",
+            // maxWidth: 1400
+            marginRight: '10px'
           },
           gap: 4,
           justifyItems: "center",
