@@ -138,7 +138,7 @@ const TripTypesPage = () => (
 
       <Grid container spacing={4}>
         {tripTypes.map((trip, index) => (
-          <Grid xs={12} sm={6} md={4} key={index} sx={{ display: "flex" }} component="div">
+          <Grid item xs={12} sm={6} md={4} key={index} sx={{ display: "flex" }} component="div">
             <Card
               sx={{
                 display: "flex",
@@ -276,5 +276,6 @@ const TripTypesPage = () => (
 );
 
 export default TripTypesPage;
+
 
 

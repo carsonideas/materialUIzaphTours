@@ -159,11 +159,11 @@ const DestinationsPage = () => {
         {/* Destinations Grid */}
         <Grid container spacing={4}>
           {currentDestinations.map((destination, index) => (
-            <Grid item xs={12} md={6} lg={4} key={index}>
+            <Grid item xs={12} md={6} lg={4} key={index} component="div">
               <Card
                 sx={{
                   width: { xs: 450, sm: 330, md: 439, lg: 559, xl: 560 },
-                  // width: { xs: 450, sm: 330, md: 439, lg: 559 },
+                  // width: { xs: 450, sm: 330, md: 439, lg: 559 }
                   // height: { xs: 450, sm: 330, md: 439, lg: 559 }
                   //  width:500,
                   height: 600,
@@ -376,5 +376,6 @@ const DestinationsPage = () => {
 };
 
 export default DestinationsPage;
+
 
 
