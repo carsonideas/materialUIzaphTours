@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
   return (
     <Container maxWidth="lg" sx={{ py: 8 }}>
       <Typography variant="h3" textAlign="center" gutterBottom sx={{ mb: 6 }}>
-        What Our Travelers Say
+        Our Satisfied Customer Reviews!
       </Typography>
 
       <Box
