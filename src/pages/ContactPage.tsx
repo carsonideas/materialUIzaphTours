@@ -10,7 +10,9 @@ import {
   Link,
   Divider,
 } from "@mui/material";
+
 import { Phone, Email, LocationOn } from "@mui/icons-material";
+
 import FooterSection from "./FooterSection";
 
 const ContactPage = () => {
@@ -18,7 +20,9 @@ const ContactPage = () => {
     <Box
       sx={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+
+        // background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+       
         paddingTop: "64px",
       }}
     >
@@ -46,7 +50,8 @@ const ContactPage = () => {
           <Link
             href="/"
             underline="none"
-            sx={{ "&:hover": { color: "#c33764" } }}
+            sx={{ "&:hover": { color: "#c33764", } }}
+            
           >
             Home
           </Link>
@@ -57,32 +62,60 @@ const ContactPage = () => {
 
         <Grid container spacing={4}>
           <Grid size={{ xs: 12, md: 6 }}>
-            <Paper sx={{ p: 9, borderRadius: 3, boxShadow: 4 }}>
+            <Paper sx={{ 
+              p: 9, 
+              borderRadius: 3,
+              boxShadow: 4, 
+              // background: "linear-gradient(to right, #c33764, #1d2671)",
+              // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+              // color: "white",
+              // opacity: 0.9
+
+              }}>
               <Typography
+              sx={{color: "orange",}}
                 variant="h5"
                 fontWeight="bold"
                 color="#c33764"
+                
                 gutterBottom
+                
               >
                 Send Us a Message
               </Typography>
-              <TextField
+              <TextField 
+
+                
                 fullWidth
                 label="Full Name"
                 margin="normal"
                 variant="outlined"
+                // sx={{
+                // input: { color: "white" },              
+                // label: { color: "white" }, }}
+              
+              
               />
               <TextField
                 fullWidth
                 label="Email"
                 margin="normal"
                 variant="outlined"
+                
+                // sx={{
+                // input: { color: "white" },              
+                // label: { color: "white" }, }}
+
               />
               <TextField
                 fullWidth
                 label="Subject"
                 margin="normal"
                 variant="outlined"
+
+                // sx={{
+                // input: { color: "white" },              
+                // label: { color: "white" }, }}
               />
               <TextField
                 fullWidth
@@ -91,6 +124,10 @@ const ContactPage = () => {
                 rows={4}
                 margin="normal"
                 variant="outlined"
+                
+                // sx={{
+                // input: { color: "white" },              
+                // label: { color: "white" }, }}
               />
               <Button
                 variant="contained"
@@ -132,25 +169,46 @@ const ContactPage = () => {
                 <Typography
                   variant="h5"
                   fontWeight="bold"
-                  sx={{ marginLeft: 22, color: "orange" }}
+                  sx={{ 
+                    marginLeft: 22, 
+                    color: "orange" 
+                  }}
                   gutterBottom
                 >
                   Zaph Tours HQ
                 </Typography>
 
-                <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                <Box sx={{ 
+                  display: "flex",
+                  alignItems: "center",
+                  mb: 2 
+                    }}>
                   <LocationOn
-                    sx={{ mr: 2, color: "#f7bb97", marginLeft: 22 }}
+                    sx={{ mr: 2,
+                       color: "#f7bb97", 
+                       marginLeft: 22 
+                      }}
                   />
                   <Typography variant="body1">Nairobi, Kenya</Typography>
                 </Box>
 
-                <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
-                  <Phone sx={{ mr: 2, color: "#f7bb97", marginLeft: 22 }} />
+                <Box sx={{ 
+                  display: "flex", 
+                  alignItems: "center", 
+                  mb: 2 
+                  }}>
+                  <Phone sx={{
+                    mr: 2, 
+                    color: "#f7bb97", 
+                    marginLeft: 22 
+                    }} />
                   <Typography variant="body1">+254 785 493 852</Typography>
                 </Box>
 
-                <Box sx={{ display: "flex", alignItems: "center" }}>
+                <Box sx={{ 
+                  display: "flex", 
+                  alignItems: "center" 
+                  }}>
                   <Email sx={{ mr: 2, color: "#f7bb97", ml: 22 }} />
                   <Typography variant="body1">info@zaphtours.com</Typography>
                 </Box>
