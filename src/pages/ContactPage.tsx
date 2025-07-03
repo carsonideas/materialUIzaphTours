@@ -22,7 +22,7 @@ const ContactPage = () => {
         paddingTop: "64px",
       }}
     >
-      {/* Header */}
+      
       <Paper
         sx={{
           background: "linear-gradient(to right, #c33764, #1d2671)",
@@ -57,7 +57,7 @@ const ContactPage = () => {
 
         <Grid container spacing={4}>
           <Grid size={{ xs: 12, md: 6 }}>
-            <Paper sx={{ p: 4, borderRadius: 3, boxShadow: 4 }}>
+            <Paper sx={{ p: 9, borderRadius: 3, boxShadow: 4 }}>
               <Typography
                 variant="h5"
                 fontWeight="bold"
@@ -158,7 +158,7 @@ const ContactPage = () => {
 
               <Divider />
 
-              <Box sx={{ height: 400, position: "relative" }}>
+              <Box sx={{ height: 450, position: "relative" }}>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.19034290707!2d36.68275967671628!3d-1.302809894816087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2s!4v1704963600000!5m2!1sen!2s"
                   width="100%"
@@ -170,7 +170,7 @@ const ContactPage = () => {
           </Grid>
         </Grid>
 
-        {/* Additional Contact Options */}
+       
         <Box sx={{ mt: 6 }}>
           <Paper
             sx={{
