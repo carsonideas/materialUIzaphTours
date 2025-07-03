@@ -28,7 +28,7 @@ const HeroSection = () => {
         paddingTop: "64px",
       }}
     >
-      {/* Hero Content */}
+  
       <Box
         sx={{
           flexGrow: 1,

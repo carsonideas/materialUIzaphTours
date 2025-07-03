@@ -77,6 +77,13 @@ const AboutSection = () => {
                 color: "white",
               }}
             />
+            <Chip
+              label="Simba !!!"
+              sx={{
+                background: "linear-gradient(to right, #c33764, #1d2671)",
+                color: "white",
+              }}
+            />
           </Box>
         </Grid>
       </Grid>
