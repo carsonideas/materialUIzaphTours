@@ -72,17 +72,46 @@ const ContactPage = () => {
               // opacity: 0.9
 
               }}>
+              <Box
+                sx={{
+                  background: "linear-gradient(to right, #c33764, #1d2671)",
+                  // color: "white",
+                  // marginLeft:10,
+                  p: 7.5,
+                  mt: -9,
+                  width: 385,
+                  height: 40, 
+                  ml: -9,
+                  border: 'none',
+                  // borderRadius: '9px',
+                  // borderRadius: '19px',
+                  borderTopLeftRadius: '19px',
+                  borderTopRightRadius: '19px',
+                  // borderRadius: '9px'
+                  // opacity: 0.9,
+                  
+                }}
+              >
               <Typography
-              sx={{color: "orange",}}
+              sx={{
+                color: "orange", 
+                pl: 1
+
+                // background: "linear-gradient(to right, #c33764, #1d2671)",
+              }}
                 variant="h5"
                 fontWeight="bold"
                 color="#c33764"
+                fontSize={40}
                 
                 gutterBottom
                 
               >
                 Send Us a Message
               </Typography>
+              </Box>
+
+
               <TextField 
 
                 
@@ -90,9 +119,10 @@ const ContactPage = () => {
                 label="Full Name"
                 margin="normal"
                 variant="outlined"
-                // sx={{
-                // input: { color: "white" },              
-                // label: { color: "white" }, }}
+                sx={{
+                input: { color: "orange" },              
+                // label: { color: "blue" }, 
+              }}
               
               
               />
@@ -102,6 +132,11 @@ const ContactPage = () => {
                 margin="normal"
                 variant="outlined"
                 
+                sx={{
+                input: { color: "orange" },              
+                // label: { color: "blue" }, 
+              }}
+
                 // sx={{
                 // input: { color: "white" },              
                 // label: { color: "white" }, }}
@@ -113,26 +148,40 @@ const ContactPage = () => {
                 margin="normal"
                 variant="outlined"
 
+              sx={{
+                input: { color: "orange" },              
+                // label: { color: "blue" }, 
+              }}
+
                 // sx={{
                 // input: { color: "white" },              
                 // label: { color: "white" }, }}
               />
               <TextField
+              
                 fullWidth
                 label="Message"
-                multiline
+                // multiline
                 rows={4}
                 margin="normal"
                 variant="outlined"
+                sx={{
+                input: { color: "orange" },     
+                // overflowwrap: breakword,         
+                // label: { color: "blue" }, 
+              }}
                 
+
                 // sx={{
                 // input: { color: "white" },              
                 // label: { color: "white" }, }}
               />
+              
               <Button
                 variant="contained"
                 size="large"
                 sx={{
+                  // input: { color: "orange" },
                   mt: 2,
                   background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                   borderRadius: "30px",
