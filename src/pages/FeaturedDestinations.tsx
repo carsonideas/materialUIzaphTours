@@ -81,7 +81,8 @@ const FeaturedDestinations = () => {
           container
           spacing={3}
           justifyContent="center"
-          alignItems="stretch"
+          // flexDirection="row"
+          // alignItems="stretch"
         >
           {destinations.map((dest, i) => (
             <Grid
