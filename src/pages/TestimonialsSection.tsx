@@ -70,6 +70,8 @@ const TestimonialsSection = () => {
                 width: 220,
                 // height: 300,
                 maxWidth: 360,
+                // background: "linear-gradient(to right, #c33764, #1d2671)",
+                // background: "linear-gradient(to right, #dd5e89, #f7bb97)",
                 background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
                 color: "white",
                 borderRadius: 3,
