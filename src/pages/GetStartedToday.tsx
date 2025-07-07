@@ -40,8 +40,10 @@ function GetStartedToday() {
           "&:hover": {
             background: "white",
             color: "#c33764",
+            // color: "white",
             transform: "scale(1.05)",
-            boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
+            // boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
+            // background: "linear-gradient(to right, #c33764, #1d2671)",
           },
         }}
       >

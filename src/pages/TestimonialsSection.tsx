@@ -78,7 +78,7 @@ const TestimonialsSection = () => {
               }}
             >
               <Box>
-                <Avatar
+                {/* <Avatar
                   sx={{
                     width: 80,
                     height: 80,
@@ -88,10 +88,30 @@ const TestimonialsSection = () => {
                     fontSize: "1.5rem",
                     fontWeight: "bold",
                     marginTop: 2,
+                    image:
+      //  "./image4.jpeg",
+      // "https://content.api.news/v3/images/bin/25dc95c6f0f4f34d8e6e99623e7f4827",
+    "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOc_sbgqtP4OYOBwmf5Qht9ItLbxktPgEpw&s",
+    
                   }}
                 >
                   {testimonial.avatar}
-                </Avatar>
+                </Avatar> */}
+                <Avatar
+                // src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="https://www.baliquadbiking.com/wp-content/uploads/2025/06/Kuber-ATV-Bali-Adventure-Reviews.jpg.webp"
+                sx={{
+                  width: 80,
+                  height: 80,
+                  mx: "auto",
+                  mb: 3,
+                  background: "linear-gradient(to right, #dd5e89, #f7bb97)",
+                  fontSize: "1.5rem",
+                  fontWeight: "bold",
+                  marginTop: 2,
+                }}
+              />
                 <Typography
                   variant="body1"
                   sx={{
